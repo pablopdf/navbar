@@ -123,9 +123,27 @@ main {
     transition: 1.1s;
 }
 
+
+/* pantallas grandes*/
+@media only all and (min-width:750px) {
+    .navbar {
+        top: 0;
+        width: 5rem;
+        height: 100vh;        
+    }
+    .navbar:hover {
+        width: 16rem;
+    }
+    .navbar:hover .link-text {
+        display: inline;
+        transition: opacity var(--transitios-speed);
+    }
+
+}
+
 /* pantallas pequeñas*/
 
-@media only screen and (max-width: 600px) {
+@media only all and (max-width: 750px) {
     .navbar {
         bottom: 0;
         width: 100vw;
@@ -160,22 +178,5 @@ main {
         display: none;
     }
 
-
-}
-
-/* pantallas grandes*/
-@media only screen and (min-width:600px) {
-    .navbar {
-        top: 0;
-        width: 5rem;
-        height: 100vh;        
-    }
-    .navbar:hover {
-        width: 16rem;
-    }
-    .navbar:hover .link-text {
-        display: inline;
-        transition: opacity var(--transitios-speed);
-    }
 
 }
